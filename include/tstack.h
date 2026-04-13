@@ -2,10 +2,12 @@
 #ifndef INCLUDE_TSTACK_H_
 #define INCLUDE_TSTACK_H_
 
+#include <array>
+
 template<typename T, int size>
 class Tstack {
  private:
-  T arr[size];
+  std::array<T, size> arr;
   int top_idx;
 
  public:
